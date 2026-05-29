@@ -1,1 +1,137 @@
+```html
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Erik Dannbauer - 5r</title>
+
+  <style>
+    body {
+      background-color: lightblue;
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      line-height: 1.6;
+    }
+
+    h1 {
+      color: darkblue;
+      text-align: center;
+    }
+
+    h2 {
+      color: navy;
+      margin-top: 30px;
+      border-bottom: 2px solid navy;
+      padding-bottom: 5px;
+    }
+
+    p, li {
+      font-size: 18px;
+    }
+
+    img {
+      display: block;
+      margin-top: 15px;
+      border: 3px solid navy;
+    }
+
+    .quelle {
+      font-size: 14px;
+      margin-top: 8px;
+    }
+
+    a {
+      color: darkred;
+    }
+
+    .box {
+      background-color: white;
+      padding: 20px;
+      border-radius: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="box">
+
+    <h1>Erik Dannbauer - 5r</h1>
+
+    <h2>Geografische Fakten</h2>
+
+    <p>
+      Barcelona ist die Traumstadt. Die Stadt liegt in Spanien am Mittelmeer
+      und hat ungefähr 1,6 Millionen Einwohner.
+    </p>
+
+    <h2>Top 3 Sehenswürdigkeiten</h2>
+
+    <ol>
+      <li>Sagrada Família</li>
+      <li>Park Güell</li>
+      <li>La Rambla</li>
+    </ol>
+
+    <h2>Kulinarische Spezialitäten</h2>
+
+    <ul id="liste-essen"></ul>
+
+    <h2>Visueller Eindruck</h2>
+
+    <img 
+      src="Stephansdom Nordturm 01.JPG"
+      width="450"
+      title="vorgegebenes bild"
+      alt="Blick auf den Nordturm des Stephansdoms in Wien mit gotischer Architektur und blauem Himmel"
+    >
+
+    <p class="quelle">
+      Fotograf:
+      <a href="https://commons.wikimedia.org/wiki/File:Stephansdom_Nordturm_01.JPG" target="_blank">
+        Uoaei1
+      </a>
+      <br>
+
+      Bildtitel:
+      <a href="https://commons.wikimedia.org/wiki/File:Stephansdom_Nordturm_01.JPG" target="_blank">
+        North tower of St. Stephen's Cathedral, Vienna, Austria
+      </a>
+      <br>
+
+      Lizenz:
+      <a href="https://creativecommons.org/licenses/by-sa/3.0/" target="_blank">
+        CC BY-SA 3.0
+      </a>
+    </p>
+
+  </div>
+
+  <script>
+    const essen = ["Paella", "Tapas", "Crema Catalana", "Spanien"];
+
+    const liste = document.getElementById("liste-essen");
+
+    essen.forEach(h => {
+      let li = document.createElement("li");
+      li.textContent = h;
+      liste.appendChild(li);
+    });
+  </script>
+
+</body>
+</html>
+```
+
+```bash
+git commit -m "Aufgabe 2 erledigt"
+```
+
+```bash
+git commit -m "Aufgabe 3 erledigt"
+```
+
+```bash
+git commit -m "Aufgabe 4 fertig"
+```
 
